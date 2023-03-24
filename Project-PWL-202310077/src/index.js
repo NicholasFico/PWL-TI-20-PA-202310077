@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Form from "./Component/Form";
+import Form from './Component/Tugas_1/Form';
+import Widget from './Component/Tugas_2/Widget';
+import FormMultiple from './Component/Tugas_2/FormMultiple';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Form />
+    {/* <Form /> */}
+    {/* <Widget /> */}
+    <FormMultiple />
   </React.StrictMode>
 );
 
