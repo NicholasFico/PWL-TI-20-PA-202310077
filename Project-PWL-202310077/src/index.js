@@ -1,18 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import Form from './Component/Tugas_1/Form';
-import Widget from './Component/Tugas_2/Widget';
-import FormMultiple from './Component/Tugas_2/FormMultiple';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+// import FormPersonalData from "./components/tugas1/FormPersonalData";
+// import Widget1 from "./components/tugas2/Widget1";
+// import FormPersonalDataMultiple from "./components/tugas2/FormPersonalDataMultiple";
+// import Layout from "./components/latihan-3-1/layouts/Layout";
+// import Homes from "./components/latihan-3-1/modules/Homes/Homes";
+import AppRoute from "./Component/Latihan-3-1/Apps/AppRoute";
+import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const { PUBLIC_URL } = process.env;
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <Form /> */}
-    {/* <Widget /> */}
-    <FormMultiple />
+    {/* <FormPersonalData />
+    <Widget1 />
+    <FormPersonalDataMultiple /> */}
+    {/* <Layout>
+      <Homes />
+    </Layout> */}
+
+    <BrowserRouter basename={PUBLIC_URL}>
+      <AppRoute />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
